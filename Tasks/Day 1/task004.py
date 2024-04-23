@@ -1,0 +1,5 @@
+print("Введите три числа: ")
+nm1 = float(input())
+nm2 = float(input())
+nm3 = float(input())
+print("Среднее арифметическое:", (nm1 + nm2 + nm3) / 3)
