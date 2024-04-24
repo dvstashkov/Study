@@ -1,0 +1,11 @@
+nma = float(input("Введите длину комнаты: "))
+nmb = float(input("Введите ширину комнаты: "))
+nmc = float(input("Введите высоту комнаты: "))
+nmp = float(input("Введите процент, занимаемый окнами и дверьми: "))
+nmd = float(input("Введите расход краски на кв. метр: "))
+nmpd = float(input("Введите стоимость литра краски: "))
+sall = (nma * nmc + nmb * nmc) * 2
+spaint = sall * (100 - nmp) / 100
+paintcnt = spaint * nmd
+paintprice = paintcnt * nmpd
+print("Площадь стен: " + str(sall), "Площадь стен под покраску: " + str(spaint), "Расход краски: " + str(paintcnt), "Стоимость краски: " + str(paintprice), sep = "\n")

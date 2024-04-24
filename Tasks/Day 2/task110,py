@@ -1,0 +1,33 @@
+import decimal
+M_MERCURY = decimal.Decimal("3.3e23")
+M_VENUS = decimal.Decimal("4.9e24")
+M_EARTH = decimal.Decimal("5.98e24")
+M_MARS = decimal.Decimal("6.44e23")
+M_JUPITER = decimal.Decimal("1.9e27")
+M_SATURN = decimal.Decimal("5.68e26")
+M_URANUS = decimal.Decimal("8.7e25")
+M_NEPTUNE = decimal.Decimal("1.03e26")
+
+mall = M_EARTH + M_JUPITER + M_MARS + M_MERCURY + M_NEPTUNE + M_SATURN + M_URANUS + M_VENUS
+msr = mall / 8
+p_mercury = M_MERCURY / mall * 100
+p_venus = M_VENUS / mall * 100
+p_earth = M_EARTH / mall * 100
+p_mars = M_MARS / mall * 100
+p_jupiter = M_JUPITER / mall * 100
+p_saturn = M_SATURN / mall * 100
+p_uranus = M_URANUS / mall * 100
+p_neptune = M_NEPTUNE / mall * 100
+res = p_jupiter / (100 - p_jupiter)
+
+print("Общая масса всех планет:", mall)
+print("ОСреднее арифметическое масс всех планет:", msr)
+print("Масса Меркурия в процентном соотношении:", p_mercury)
+print("Масса Венеры в процентном соотношении:", p_venus)
+print("Масса Земли в процентном соотношении:", p_earth)
+print("Масса Марса в процентном соотношении:", p_mars)
+print("Масса Юпитера в процентном соотношении:", p_jupiter)
+print("Масса Сатурна в процентном соотношении:", p_saturn)
+print("Масса Урана в процентном соотношении:", p_uranus)
+print("Масса Нептуна в процентном соотношении:", p_neptune)
+print("Соотношение массы Юпитера к сумме масс остальных планет:", res)
